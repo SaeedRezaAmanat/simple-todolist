@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ToDoList2-memory | 89</title>
+  <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <section class="task-container" id="not-started">
+    <h1 class="container-header">Not Started</h1>
+    <div class="container-body"></div>
+  </section>
+  <section class="task-container" id="in-progress">
+    <h1 class="container-header">In Progress</h1>
+    <div class="container-body"></div>
+  </section>
+  <section class="task-container" id="completed">
+    <h1 class="container-header">Completed</h1>
+    <div class="container-body"></div>
+  </section>
+  <section class="task-container" id="tasks">
+    <h1 class="container-header">Tasks</h1>
+    <div class="container-body">
+      <div class="add-task"><i class="fas fa-plus"></i><span>Add Task</span></div>
+    </div>
+    </div>
+  </section>
+  <section class="modal-wrapper">
+    <section class="modal" id="modal">
+      <span class="close" id="modal-close">&times;</span>
+      <section class="modal-content">
+        <p class="modal-text">enter new task:</p>
+        <input type="text" name="new-task-input" id="new-task-input" class="new-task-input"
+          placeholder="Enter Something">
+        <p class="input-msg">Hello</p>
+        <button class="add-btn" id="add-btn">Add Task</button>
+      </section>
+    </section>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
