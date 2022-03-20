@@ -2,6 +2,7 @@
 
 :root {
   --milky: #f0f0d0;
+  --text-small: 14px;
 }
 
 *{
@@ -16,6 +17,12 @@ body {
   font-weight: 300;
   display: flex;
   flex-wrap: wrap;
+  height: 95vh;
+}
+
+.section-wrapper {
+  display: flex;
+  width: 100vw;
   height: 95vh;
 }
 
@@ -66,7 +73,7 @@ body {
   margin-bottom:0.5rem;
   color: var(--milky);
   text-align: center;
-  padding: 1.5rem;
+  padding: 10px;
   border-radius: 5px;
 }
 
@@ -190,4 +197,21 @@ body {
 .add-btn:hover {
   background-color: rgb(56, 197, 68);
   cursor: pointer;
+}
+
+
+/* responsive */
+@media screen and (max-width: 960px) {
+  .task-container {
+    width: 20%;
+  }
+
+  .container-header{
+    font-size: var(--text-small);
+  }
+
+  .add-task span {
+    font-size: var(--text-small);
+    margin: auto;
+  }
 }
